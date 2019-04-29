@@ -1,0 +1,14 @@
+// Mixins
+@import './mixins/mixins';
+
+// Plugins
+
+// Estilos
+@import './molecules/header';
+// Resets
+@import './mixins/reset';
+
+.azul {
+    background-color: $azul;
+    height: 100vh;
+}

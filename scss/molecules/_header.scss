@@ -1,0 +1,14 @@
+@import './../atoms/logo';
+.navbar-fixed {
+    height: 100px;
+    .nav-bar {
+        height: 100px;
+        line-height: 100px;
+    }
+    nav {
+        background-color: $azul;
+    }
+}
+.nav-wrapper {
+    
+}

@@ -1,0 +1,34 @@
+@import 'variaveis';
+
+// Media Queries
+
+// Calcular Rem
+@function calculateRem($size) {
+    $remSize: $size / 16px;
+
+    @return $remSize * 1rem;
+}
+
+// Font-size
+@mixin font-size($size) {
+    font-size($size) {}
+
+    font-size: calculateRem($size);
+}
+
+// Centralizador Vertical
+@mixin vertical-center {
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+// Transições
+@mixin transition($transition...) {
+    -moz-transition: all $transition linear;
+    -o-transition: all $transition linear;
+    -webkit-transition: all $transition linear;
+    transition: all $transition linear;    
+}
